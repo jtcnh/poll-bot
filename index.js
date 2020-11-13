@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "$"
 const version = "1.0"
-const TOKEN = "Nzc2NDg3NzA3MTQ4Mjg4MDAw.X61mhw.1rC2OGoGOYb7dcXorak0V-L_02E"
 
 let pollChannel = false
 
@@ -68,4 +67,4 @@ client.on('message', message => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(TOKEN);
+client.login(process.env.BOT_TOKEN);
